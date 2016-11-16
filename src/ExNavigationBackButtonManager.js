@@ -63,7 +63,7 @@ class ExNavigationBackButtonManager {
   _onHardwareBackPress = async () => {
     const moreRoutes = await this.store.dispatch(ExNavigationActions.goBack());
     if (moreRoutes === false) {
-      BackAndroid.exitApp();
+      // BackAndroid.exitApp();
     }
   };
 
